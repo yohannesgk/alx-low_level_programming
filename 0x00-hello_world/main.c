@@ -1,7 +1,6 @@
 #include <stdio.h>
-
-
-int main(){
+/** desc
+ */
+int main(void){
     printf("hello world");
-
 }
