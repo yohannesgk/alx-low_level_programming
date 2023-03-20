@@ -1,8 +1,4 @@
-`IDENTIFY ERROR`![image](https://user-images.githubusercontent.com/105258746/190832836-b113fa0f-e26f-4db1-b8c5-d094c3dfd0a7.png) `ANALYZE ERROR`
-
-
-Debugging is the process of detecting and removing of existing and potential errors (also called as 'bugs') in a software code that can cause it to behave unexpectedly or crash.
-`YOU HAVE TO CRAETE YOUR PROTOTYPE ON YOUR main.h file FOR YOUR CODES TO WORK`
+# by Yohannes Gebrekirstos
 
 ## File: 0-main.c
 In most projects, we often give you only one main file to test with. For example, this main file is a test for a postitive_or_negative() function similar to the one you worked with in an earlier C project:
@@ -26,13 +22,10 @@ int main(void)
 ```
 Based on the `main.c` file above, create a file named `0-main.c.` This file must test that the function positive_or_negative() gives the correct output when given a case of 0.
 
-You are not coding the solution / function, you’re just testing it! However, you can adapt your function from 0x01. C - Variables, [if, else, while - Task #0 to compile with this main file to test locally.](https://github.com/Lordwill1/alx-low_level_programming/blob/master/0x01-variables_if_else_while/0-positive_or_negative.c)
 
 ## File: 1-main.c
 Copy this main file. Comment out (don’t delete it!) the part of the code that is causing the output to go into an infinite loop.
-- Don’t add or remove any lines of code, as we will be checking your line count. You are only allowed to comment out existing code.
-- You do not have to compile with `-Wall -Werror -Wextra -pedantic` for this task.
-- 
+
 ```
 #include <stdio.h>
 
@@ -92,12 +85,10 @@ int largest_number(int a, int b, int c)
     return (largest);
 }
 ```
-Fix the code in 2-largest_number.c so that it correctly prints out the largest of three numbers, no matter the case.
-- Line count will not be checked for this task.
+
 
 ## File: 3-print_remaining_days.c, main.h
 This program converts a date to the day of year and determines how many days are left in the year, taking leap year into consideration.
-### NOTE: FOR YOU TO UNDERSTAND THE CODE ON SAMPLE 2, YOU NEED KNOWLEDGE OF LOGIC TRUTH TABLE.
 
 * Code sample 1
 ```
@@ -129,9 +120,7 @@ int main(void)
 }
 ```
 
-* Code sample 2 (You need knowledge on logic truth table)
-![image](https://user-images.githubusercontent.com/105258746/190833251-a0bc604c-af0d-468d-884e-53387e3c6a18.png)
-
+* sample 2 
 ```
 #include <stdio.h>
 #include "main.h"
@@ -217,7 +206,7 @@ int convert_day(int month, int day)
 }
 ```
 
-* Code sample 3 (This is the code we are to work on)
+* sample 3 
 ```
 #include <stdio.h>
 #include "main.h"
@@ -257,28 +246,9 @@ void print_remaining_days(int month, int day, int year)
     }
 }
 ```
-`Output below ^1 looks good for 04/01/1997! We make a new main file 3-main_b.c to try a case that is a leap year: 02/29/2000.`
-```
-carrie@ubuntu:/debugging$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 3-convert_day.c 3-print_remaining_days.c 3-main_a.c -o 3-main_a 
-carrie@ubuntu:/debugging$ ./3-main_a
-Date: 04/01/1997
-Day of the year: 91
-Remaining days: 274
-carrie@ubuntu:/debugging$
-```
-### Fix the `print_remaining_days()` function so that the output works correctly for all dates and all leap years.
-
-* Line count will not be checked for this task.
-- You can assume that all test cases have valid months (i.e. the value of month will never be less than 1 or greater than 12) and valid days (i.e. the value of day will never be less than 1 or greater than 31).
-- You can assume that all test cases have valid month/day combinations (i.e. there will never be a June 31st or November 31st, etc.), but not all month/day/year combinations are valid (i.e. February 29, 1991 or February 29, 2427).
 
 
-# AS A PROGRAMMER, WHAT DO YOU DO WHEN YOU GET STUCK?
-- To help you track down that bug, start reading your code aloud. 
-- Pretend that a programmer friend is sitting right next to you. 
-- Explain what your code is doing and how it works. As you talk through your code, you’ll find the problem. If you don’t, have your imaginary friend ask you questions during your explanation.
-- Don’t worry about going mental. You’re a C programmer. You’re already mental. 😅
 
 
-As a bonus, talking through your code also helps you identify which portions need to have comments and what the comments should be.
+
 
